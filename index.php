@@ -1,75 +1,15 @@
 <?php
 include 'res/header.php';
+include 'widget/sidebarWidget.php';
 ?>
-
-<!-- Mobile Toggle Button -->
-<button class="mobile-toggle d-md-none" id="sidebarToggle">
-    <i class="fas fa-bars"></i>
-</button>
-
-<!-- Sidebar -->
-<div class="sidebar d-flex flex-column flex-shrink-0 p-3 text-white" id="sidebar">
-    <a href="index.php" class="sidebar-logo text-white text-decoration-none">
-        <img src="assets/img/logo.png" alt="CodeCraft" width="80" style="mix-blend-mode: screen;">
-    </a>
-    <ul class="nav nav-pills flex-column mb-auto sidebar-nav">
-        <li class="nav-item">
-            <a href="index.php" class="nav-link active" aria-current="page">
-                <i class="fas fa-home"></i>
-                Dashboard
-            </a>
-        </li>
-        <li>
-            <a href="#" class="nav-link text-white">
-                <i class="fas fa-project-diagram"></i>
-                Progetti
-            </a>
-        </li>
-        <li>
-            <a href="#" class="nav-link text-white">
-                <i class="fas fa-users"></i>
-                Clienti
-            </a>
-        </li>
-        <li>
-            <a href="#" class="nav-link text-white">
-                <i class="fas fa-chart-line"></i>
-                Analisi
-            </a>
-        </li>
-        <li>
-            <a href="#" class="nav-link text-white">
-                <i class="fas fa-cog"></i>
-                Impostazioni
-            </a>
-        </li>
-    </ul>
-    <hr>
-    <div class="dropdown user-profile">
-        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <div class="user-avatar me-2">AD</div>
-            <strong>Admin</strong>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-            <li><a class="dropdown-item" href="#">Nuovo progetto...</a></li>
-            <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-            <li><a class="dropdown-item" href="#">Profilo</a></li>
-            <li>
-                <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Esci</a></li>
-        </ul>
-    </div>
-</div>
 
 <!-- Main Content -->
 <main class="main-content">
     <div class="container-fluid">
         <!-- Header -->
         <header class="dashboard-header">
-            <div class="logo-title">
-                <img src="assets/img/logo_text.png" alt="CodeCraft" width="100">
+            <div class="logo-title justify-content-center d-flex align-items">
+                <img src="assets/img/craftaweb-logo-bg.png" alt="CraftaWeb">
             </div>
             <div class="header-actions">
                 <a href="#" class="action-btn">
@@ -224,3 +164,7 @@ include 'res/header.php';
         </div>
     </div>
 </main>
+
+</body>
+
+</html>
