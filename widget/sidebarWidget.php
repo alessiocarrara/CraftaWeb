@@ -2,7 +2,7 @@
     <!-- Sidebar header -->
     <header class="sidebar-header">
         <a href="#" class="header-logo">
-            <img src="assets/img/craftaweb-logo-bg.png" alt="CraftaWeb">
+            <img src="assets/img/logo-bg.png" alt="CraftaWeb">
         </a>
         <button class="toggler sidebar-toggler">
             <span class="material-symbols-rounded">chevron_left</span>
@@ -16,69 +16,38 @@
         <ul class="nav-list primary-nav">
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <span class="nav-icon material-symbols-rounded">dashboard</span>
-                    <span class="nav-label">Dashboard</span>
+                    <span class="nav-icon material-symbols-rounded">home</span>
+                    <span class="nav-label">Home</span>
                 </a>
-                <span class="nav-tooltip">Dashboard</span>
+                <span class="nav-tooltip">Home</span>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <span class="nav-icon material-symbols-rounded">calendar_today</span>
-                    <span class="nav-label">Calendar</span>
+                    <span class="nav-icon material-symbols-rounded">person</span>
+                    <span class="nav-label">Chi sono</span>
                 </a>
-                <span class="nav-tooltip">Calendar</span>
+                <span class="nav-tooltip">Chi sono</span>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <span class="nav-icon material-symbols-rounded">notifications</span>
-                    <span class="nav-label">Notifications</span>
+                    <span class="nav-icon material-symbols-rounded">service_toolbox</span>
+                    <span class="nav-label">I miei servizi</span>
                 </a>
-                <span class="nav-tooltip">Notifications</span>
+                <span class="nav-tooltip">I miei servizi</span>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <span class="nav-icon material-symbols-rounded">group</span>
-                    <span class="nav-label">Team</span>
+                    <span class="nav-icon material-symbols-rounded">code</span>
+                    <span class="nav-label">Tecnologie utilizzate</span>
                 </a>
-                <span class="nav-tooltip">Team</span>
+                <span class="nav-tooltip">Tecnologie utilizzate</span>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <span class="nav-icon material-symbols-rounded">insert_chart</span>
-                    <span class="nav-label">Analytics</span>
+                    <span class="nav-icon material-symbols-rounded">contact_mail</span>
+                    <span class="nav-label">Contattami</span>
                 </a>
-                <span class="nav-tooltip">Analytics</span>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span class="nav-icon material-symbols-rounded">star</span>
-                    <span class="nav-label">Bookmarks</span>
-                </a>
-                <span class="nav-tooltip">Bookmarks</span>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span class="nav-icon material-symbols-rounded">settings</span>
-                    <span class="nav-label">Settings</span>
-                </a>
-                <span class="nav-tooltip">Settings</span>
-            </li>
-        </ul>
-        <!-- Secondary bottom nav -->
-        <ul class="nav-list secondary-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span class="nav-icon material-symbols-rounded">account_circle</span>
-                    <span class="nav-label">Profile</span>
-                </a>
-                <span class="nav-tooltip">Profile</span>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span class="nav-icon material-symbols-rounded">logout</span>
-                    <span class="nav-label">Logout</span>
-                </a>
-                <span class="nav-tooltip">Logout</span>
+                <span class="nav-tooltip">Contattami</span>
             </li>
         </ul>
     </nav>
