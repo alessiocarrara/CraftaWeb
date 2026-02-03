@@ -12,8 +12,7 @@ include 'widget/sidebarWidget.php';
                 <img src="assets/img/craftaweb-logo-bg.png" alt="CraftaWeb">
             </div>
         </header>
-
-        <!-- Chi sono Section -->
+        
         <!-- Chi sono Section -->
         <div class="who-am-i-section">
             <div class="who-am-i-title">
@@ -30,7 +29,6 @@ include 'widget/sidebarWidget.php';
                 </p>
             </div>
         </div>
-
 
         <!-- I miei servizi Section -->
         <div class="services-section">
