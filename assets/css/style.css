@@ -62,18 +62,17 @@ body.sidebar-collapsed .main-content {
   margin-bottom: 30px;
 }
 
-/* ===== WHO AM I SECTION ===== */
+/* CHI SONO SECTION */
 .who-am-i-section {
   display: flex;
   align-items: center;
-  justify-content: center; /* centro orizzontale della sezione */
+  justify-content: center;
   gap: 30px;
   margin: 80px 0;
   flex-wrap: wrap;
   position: relative;
 }
 
-/* Titolo a sinistra */
 .who-am-i-title {
   display: flex;
   align-items: center;
@@ -93,7 +92,6 @@ body.sidebar-collapsed .main-content {
   color: #786cff;
 }
 
-/* ===== WHO AM I CARD ===== */
 .who-am-i-card {
   max-width: 520px;
   width: 100%;
@@ -107,8 +105,6 @@ body.sidebar-collapsed .main-content {
     0 12px 32px rgba(31, 38, 135, 0.25),
     inset 0 0 20px rgba(255, 255, 255, 0.12);
   color: #fff;
-
-  /* Animazione hover elegante */
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
@@ -123,7 +119,6 @@ body.sidebar-collapsed .main-content {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Testo adattivo */
 .who-am-i-card p {
   margin: 0;
   font-size: clamp(0.95rem, 1.1vw, 1.05rem);
@@ -144,29 +139,10 @@ body.sidebar-collapsed .main-content {
   }
 }
 
-/* Icon inside card */
+/* Chi sono - Icon */
 .service-person-wrapper {
   font-size: 4rem;
   color: rgba(255, 255, 255, 0.85);
-}
-
-/* ===== TITLE ON THE RIGHT ===== */
-.who-am-i-title {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.who-am-i-title h1 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin: 0;
-  color: white;
-}
-
-.who-am-i-title span {
-  font-size: 2.6rem;
-  color: rgba(255, 255, 255, 0.7);
 }
 
 /* ===== MOBILE ===== */
@@ -177,86 +153,84 @@ body.sidebar-collapsed .main-content {
   }
 }
 
-/* Services Section */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+/* I MIEI SERVIZI SECTION  */
+.services-section {
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.services-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.services-title h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.services-title span {
+  font-size: 2.6rem;
+  color: #786cff;
 }
 
 .service-card {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 520px;
+  width: 100%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 12px 32px rgba(31, 38, 135, 0.25),
+    inset 0 0 20px rgba(255, 255, 255, 0.12);
+  color: #fff;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
     background 0.3s ease;
-  cursor: pointer;
 }
 
 .service-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 20px 40px rgba(120, 108, 255, 0.3);
-  background: rgba(255, 255, 255, 1);
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 50px rgba(120, 108, 255, 0.4),
+    inset 0 0 30px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.service-icon-wrapper {
-  transition:
-    transform 0.3s ease,
-    background 0.3s ease,
-    color 0.3s ease;
+.service-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #786cff 0%, #5b4ddb 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
 }
 
-.service-card:hover .service-icon-wrapper {
-  transform: rotate(10deg) scale(1.1);
-  background: rgba(120, 108, 255, 0.15);
-  color: #786cff;
+.service-icon .material-symbols-rounded {
+  font-size: 2rem;
+  color: #fff;
 }
 
-.service-features {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
+.service-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: bold;
 }
 
-.service-features li {
-  margin-bottom: 8px;
-  font-size: 0.9rem;
-  color: #6c757d;
-}
-
-.service-features li i {
-  color: #198754;
-  margin-right: 8px;
-}
-
-/* Projects Table */
-.custom-table {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.status-badge {
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-
-.status-active {
-  background: rgba(25, 135, 84, 0.2);
-  color: #198754;
-}
-
-.status-pending {
-  background: rgba(255, 193, 7, 0.2);
-  color: #ffc107;
-}
-
-.status-completed {
-  background: rgba(13, 110, 253, 0.2);
-  color: #0d6efd;
+.service-card p {
+  color: white;
+  line-height: 1.6;
+  margin: 0;
 }
