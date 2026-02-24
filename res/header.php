@@ -22,8 +22,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+    <!-- Ticker JS -->
+    <script src="js/ticker.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a36c9b1306.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

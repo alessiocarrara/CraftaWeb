@@ -38,7 +38,7 @@ include 'widget/sidebarWidget.php';
             </div>
 
             <div class="row g-4">
-                <!-- Card 1 -->
+                <!-- SVILUPPO WEB & APPLICAZIONI -->
                 <div class="col-md-4">
                     <div class="service-card h-100">
                         <div class="service-icon">
@@ -54,7 +54,7 @@ include 'widget/sidebarWidget.php';
                     </div>
                 </div>
 
-                <!-- Card 2 -->
+                <!-- SOFTWARE GESTIONALI, DATABASE & CRUSCOTTI AZIENDALI -->
                 <div class="col-md-4">
                     <div class="service-card h-100">
                         <div class="service-icon">
@@ -72,7 +72,7 @@ include 'widget/sidebarWidget.php';
                     </div>
                 </div>
 
-                <!-- Card 3 -->
+                <!-- MANUTENZIONE E ASSISTENZA SU RICHIESTA -->
                 <div class="col-md-4">
                     <div class="service-card h-100">
                         <div class="service-icon">
@@ -88,6 +88,33 @@ include 'widget/sidebarWidget.php';
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div id="tecnologie" class="tech-section">
+                <div class="tech-title">
+                    <span class="material-symbols-rounded" style="color: #786cff;">code</span>
+                    <h1>Tecnologie utilizzate</h1>
+                </div>
+
+
+                <div class="tech-card">
+                    <marquee height="100" width="100%" behavior="scroll" direction="up" scrollamount="2"
+                        onmouseover="this.stop();" onmouseout="this.start();">
+                        <div class="tech-symbols">
+                            <img src="https://cdn.simpleicons.org/html5" height="100" alt="HTML5">
+                            <img src="https://cdn.simpleicons.org/css" height="100" alt="CSS">
+                            <img src="https://cdn.simpleicons.org/javascript" height="100" alt="JavaScript">
+                            <img src="https://cdn.simpleicons.org/bootstrap" height="100" alt="Bootstrap">
+                            <img src="https://cdn.simpleicons.org/jquery" height="100" alt="jQuery">
+                            <img src="https://cdn.simpleicons.org/php" height="100" alt="PHP">
+                            <img src="https://cdn.simpleicons.org/php" height="100" alt="PHP">
+                            <img src="https://cdn.simpleicons.org/php" height="100" alt="PHP">
+                            <img src="https://cdn.simpleicons.org/php" height="100" alt="PHP">
+                            <img src="https://cdn.simpleicons.org/php" height="100" alt="PHP">
+                        </div>
+                    </marquee>
+                </div>
+
             </div>
         </div>
     </div>
