@@ -31,15 +31,7 @@ body {
   position: relative;
   padding: 25px 20px;
   align-items: center;
-  justify-content: space-between;
-}
-
-.sidebar-header .header-logo img {
-  width: 46px;
-  height: 46px;
-  display: block;
-  object-fit: contain;
-  border-radius: 50%;
+  justify-content: center;
 }
 
 .sidebar-header .toggler {

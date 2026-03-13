@@ -1,8 +1,7 @@
 <div class="sidebar">
-    <!-- Sidebar header -->
     <header class="sidebar-header">
         <a href="index.php" class="header-logo">
-            <img src="assets/img/logo-bg.png" alt="CraftaWeb">
+            <img src="assets/img/logo-bg.png" height="100" width="100" alt="CraftaWeb">
         </a>
         <button class="toggler sidebar-toggler">
             <span class="material-symbols-rounded">chevron_left</span>
@@ -12,7 +11,6 @@
         </button>
     </header>
     <nav class="sidebar-nav">
-        <!-- Primary top nav -->
         <ul class="nav-list primary-nav">
             <li class="nav-item">
                 <a href="index.php" class="nav-link">
@@ -36,14 +34,14 @@
                 <span class="nav-tooltip">I miei servizi</span>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#tecnologie" class="nav-link">
                     <span class="nav-icon material-symbols-rounded">code</span>
                     <span class="nav-label">Tecnologie utilizzate</span>
                 </a>
                 <span class="nav-tooltip">Tecnologie utilizzate</span>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#contattami" class="nav-link">
                     <span class="nav-icon material-symbols-rounded">contact_mail</span>
                     <span class="nav-label">Contattami</span>
                 </a>
