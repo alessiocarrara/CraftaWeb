@@ -1,12 +1,15 @@
-<div class="sidebar">
+<!-- Overlay backdrop for mobile menu -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="sidebar" id="sidebar">
     <header class="sidebar-header">
         <a href="index.php" class="header-logo">
             <img src="assets/img/logo-bg.png" height="100" width="100" alt="CraftaWeb">
         </a>
-        <button class="toggler sidebar-toggler">
+        <button class="toggler sidebar-toggler" aria-label="Collassa sidebar">
             <span class="material-symbols-rounded">chevron_left</span>
         </button>
-        <button class="toggler menu-toggler">
+        <button class="toggler menu-toggler" aria-label="Apri menu" aria-expanded="false" aria-controls="sidebar">
             <span class="material-symbols-rounded">menu</span>
         </button>
     </header>
