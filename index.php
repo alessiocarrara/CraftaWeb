@@ -235,7 +235,7 @@ include 'widget/sidebarWidget.php';
                 </a>
                 <a href="#servizi">
                     <span class="material-symbols-rounded">service_toolbox</span>
-                    <span>Servizi</span>
+                    <span>I miei servizi</span>
                 </a>
                 <a href="#tecnologie">
                     <span class="material-symbols-rounded">code</span>
