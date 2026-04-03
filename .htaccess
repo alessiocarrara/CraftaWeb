@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /CraftaWeb/
+
+# Redirect da /index o /index.php → /
+RewriteCond %{THE_REQUEST} \s/CraftaWeb/index(\.php)?[\s?] [NC]
+RewriteRule ^index(\.php)?$ /CraftaWeb/ [R=301,L]
+
+# Redirect da .php a URL pulito
+RewriteCond %{THE_REQUEST} \s/CraftaWeb/([^.]+)\.php [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Se NON è file o cartella reale
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Aggiunge .php automaticamente
+RewriteRule ^([^/]+)$ $1.php [L]

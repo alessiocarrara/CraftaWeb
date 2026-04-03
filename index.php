@@ -1,6 +1,6 @@
 <?php
 include 'res/header.php';
-include 'widget/sidebarWidget.php';
+include 'widget/sidebar.php';
 ?>
 
 <!-- MAIN CONTENT -->
@@ -14,6 +14,7 @@ include 'widget/sidebarWidget.php';
             </div>
         </header>
 
+        <!-- DIVIDER 1 -->
         <div class="section-divider divider-top">
             <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="rgba(120,108,255,0.12)" />
@@ -26,7 +27,7 @@ include 'widget/sidebarWidget.php';
             </div>
         </div>
 
-        <!-- CHI SONO SECTION -->
+        <!-- CHI SONO -->
         <section id="chi-sono" class="who-am-i-section">
             <div class="who-am-i-inner">
                 <div class="who-am-i-title">
@@ -59,7 +60,7 @@ include 'widget/sidebarWidget.php';
             </div>
         </div>
 
-        <!-- I MIEI SERVIZI SECTION -->
+        <!-- I MIEI SERVIZI -->
         <section id="servizi" class="services-section">
             <div class="services-title">
                 <span class="material-symbols-rounded section-icon">service_toolbox</span>
@@ -121,7 +122,7 @@ include 'widget/sidebarWidget.php';
             </div>
         </div>
 
-        <!-- TECNOLOGIE UTILIZZATE SECTION -->
+        <!-- TECNOLOGIE UTILIZZATE -->
         <section id="tecnologie" class="tech-section">
             <div class="tech-title">
                 <span class="material-symbols-rounded section-icon">code</span>
@@ -148,7 +149,8 @@ include 'widget/sidebarWidget.php';
                         <img src="https://cdn.simpleicons.org/wordpress" height="60" alt="WordPress">
                         <img src="https://cdn.simpleicons.org/moodle" height="60" alt="Moodle">
                         <img src="https://cdn.simpleicons.org/linux" height="60" alt="Linux">
-                        <!-- Copia duplicata per loop infinito fluido -->
+
+                        <!-- COPIA DUPLICATA -->
                         <img src="https://cdn.simpleicons.org/html5" height="60" alt="HTML5">
                         <img src="https://cdn.simpleicons.org/css" height="60" alt="CSS">
                         <img src="https://cdn.simpleicons.org/javascript" height="60" alt="JavaScript">
@@ -184,7 +186,7 @@ include 'widget/sidebarWidget.php';
             </div>
         </div>
 
-        <!-- CONTATTAMI SECTION -->
+        <!-- CONTATTAMI -->
         <section id="contattami" class="contact-section">
             <div class="contact-card">
                 <div class="card-glow"></div>
@@ -205,76 +207,27 @@ include 'widget/sidebarWidget.php';
                 </div>
             </div>
         </section>
-
-        <!-- FOOTER DIVIDER -->
-        <div class="section-divider divider-bottom">
-            <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,30 C720,60 1440,0 1440,30 L1440,60 L0,60 Z" fill="rgba(120,108,255,0.08)" />
-            </svg>
-        </div>
-
     </div>
 
-    <footer class="dashboard-footer">
-        <div class="footer-glow"></div>
-        <div class="footer-top">
-            <!-- Brand -->
-            <div class="footer-brand">
-                <img src="assets/img/craftaweb-logo-bg.png" alt="CraftaWeb" class="footer-logo">
-                <p class="footer-tagline">
-                    Soluzioni web moderne, performanti e su misura per professionisti e piccole imprese.
-                </p>
-            </div>
-
-            <!-- Navigazione rapida -->
-            <nav class="footer-nav">
-                <span class="footer-nav-title">Navigazione</span>
-                <a href="#chi-sono">
-                    <span class="material-symbols-rounded">person</span>
-                    <span>Chi sono</span>
-                </a>
-                <a href="#servizi">
-                    <span class="material-symbols-rounded">service_toolbox</span>
-                    <span>I miei servizi</span>
-                </a>
-                <a href="#tecnologie">
-                    <span class="material-symbols-rounded">code</span>
-                    <span>Tecnologie utilizzate</span>
-                </a>
-                <a href="#contattami">
-                    <span class="material-symbols-rounded">contact_mail</span>
-                    <span>Contattami</span>
-                </a>
-            </nav>
-
-            <!-- Contatti -->
-            <div class="footer-contact">
-                <span class="footer-nav-title">Contatti</span>
-                <a href="mailto:craftaweb@gmail.com" class="footer-email">
-                    <span class="material-symbols-rounded">mail</span>
-                    <span>craftaweb@gmail.com</span>
-                </a>
-                <div class="footer-socials">
-                    <a href="#" class="footer-social-btn" aria-label="Instagram">
-                        <img src="https://cdn.simpleicons.org/instagram" height="20" alt="Instagram">
-                    </a>
-                    <a href="#" class="footer-social-btn" aria-label="GitHub">
-                        <img src="https://cdn.simpleicons.org/github" height="20" alt="GitHub">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        <div class="footer-bottom">
-            <p class="footer-copy">
-                &copy; <?php echo date('Y'); ?> <span>CraftaWeb</span>. Tutti i diritti riservati.
-            </p>
-        </div>
-    </footer>
+    <!-- FOOTER -->
+    <?php include 'widget/footer.php'; ?>
 </main>
 
+<!-- #SECTION HIDDEN -->
+<script id="g1h5gi">
+    document.querySelectorAll('a[href^="#"]:not([data-bs-toggle])').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+
+            const target = document.querySelector(this.getAttribute("href"));
+
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: "smooth" });
+                history.replaceState(null, null, " ");
+            }
+        });
+    });
+</script>
 
 </body>
 
