@@ -1,26 +1,43 @@
-Header set X-Content-Type-Options "nosniff"
-Header set X-Frame-Options "SAMEORIGIN"
-Header set X-XSS-Protection "1; mode=block"
-Header set Referrer-Policy "strict-origin-when-cross-origin"
-Header set Content-Security-Policy "default-src 'self'; img-src * data:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com;"
-
 RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteRule ^(res|widget)/ - [F,L]
-RewriteBase /CraftaWeb/
 
-# Redirect da /index o /index.php → /
-RewriteCond %{THE_REQUEST} \s/CraftaWeb/index(\.php)?[\s?] [NC]
-RewriteRule ^index(\.php)?$ /CraftaWeb/ [R=301,L]
+# Imposta la cartella root (IMPORTANTE: vuoto su IONOS)
+RewriteBase /
 
-# Redirect da .php a URL pulito
-RewriteCond %{THE_REQUEST} \s/CraftaWeb/([^.]+)\.php [NC]
-RewriteRule ^ %1 [R=301,L]
-
-# Se NON è file o cartella reale
-RewriteCond %{REQUEST_FILENAME} !-f
+# 🔹 Rimuove .php dagli URL (es: /login invece di /login.php)
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [L]
 
-# Aggiunge .php automaticamente
-RewriteRule ^([^/]+)$ $1.php [L]
+# 🔹 Redirect da .php a URL pulita
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.php[\s?]
+RewriteRule ^ /%1 [R=301,L]
+
+# 🔹 Index di default
+DirectoryIndex index.php
+
+# 🔹 Protezione base file sensibili
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql)$">
+    Require all denied
+</FilesMatch>
+
+# 🔹 Disabilita listing directory
+Options -Indexes
+
+# 🔹 Gestione errori (opzionale)
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+
+# 🔹 Security Headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# 🔹 Content Security Policy
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' code.jquery.com cdn.jsdelivr.net kit.fontawesome.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com cdn.jsdelivr.net; font-src 'self' fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
+</IfModule>
