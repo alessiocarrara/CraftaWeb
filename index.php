@@ -200,9 +200,9 @@ include 'widget/sidebar.php';
                     e ti risponderò nel più breve tempo possibile con tutti i dettagli necessari.
                 </p>
                 <div class="address text-center mt-4">
-                    <a href="mailto:craftaweb@gmail.com" class="contact-email-btn">
+                    <a href="mailto:info@craftaweb.it" class="contact-email-btn">
                         <span class="material-symbols-rounded">mail</span>
-                        craftaweb@gmail.com
+                        info@craftaweb.it
                     </a>
                 </div>
             </div>

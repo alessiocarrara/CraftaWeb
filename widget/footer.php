@@ -44,9 +44,9 @@
         <div class="footer-contact">
             <span class="footer-nav-title">Contatti</span>
             <!-- EMAIL -->
-            <a href="mailto:craftaweb@gmail.com" class="footer-email">
+            <a href="mailto:info@craftaweb.it" class="footer-email">
                 <span class="material-symbols-rounded">mail</span>
-                <span>craftaweb@gmail.com</span>
+                <span>info@craftaweb.it</span>
             </a>
             <!-- GITHUB -->
             <div class="footer-socials">
