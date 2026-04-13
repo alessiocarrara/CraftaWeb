@@ -1,33 +1,24 @@
 RewriteEngine On
-
-# Imposta la cartella root (IMPORTANTE: vuoto su IONOS)
 RewriteBase /
 
-# 🔹 Rimuove .php dagli URL (es: /login invece di /login.php)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^([^\.]+)$ $1.php [L]
+RewriteRule ^([^.]+)$ $1.php [L]
 
-# 🔹 Redirect da .php a URL pulita
 RewriteCond %{THE_REQUEST} \s/([^.]+)\.php[\s?]
 RewriteRule ^ /%1 [R=301,L]
 
-# 🔹 Index di default
 DirectoryIndex index.php
 
-# 🔹 Protezione base file sensibili
 <FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql)$">
     Require all denied
 </FilesMatch>
 
-# 🔹 Disabilita listing directory
 Options -Indexes
 
-# 🔹 Gestione errori (opzionale)
 ErrorDocument 404 /404.php
 ErrorDocument 500 /500.php
 
-# 🔹 Security Headers
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options "nosniff"
     Header always set X-Frame-Options "SAMEORIGIN"
@@ -35,9 +26,5 @@ ErrorDocument 500 /500.php
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
-</IfModule>
-
-# 🔹 Content Security Policy
-<IfModule mod_headers.c>
-    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' code.jquery.com cdn.jsdelivr.net kit.fontawesome.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com cdn.jsdelivr.net; font-src 'self' fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://code.jquery.com https://cdn.jsdelivr.net https://kit.fontawesome.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://ka-f.fontawesome.com; img-src 'self' data: https:; connect-src 'self' https://ka-f.fontawesome.com https://cdn.jsdelivr.net; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
 </IfModule>
