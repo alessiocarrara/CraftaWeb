@@ -4,7 +4,7 @@
 <!-- SIDEBAR -->
 <div class="sidebar" id="sidebar">
     <header class="sidebar-header">
-        <a href="index" class="header-logo">
+        <a href="./" class="header-logo">
             <img src="assets/img/logo-bg.png" height="100" width="100" alt="CraftaWeb">
         </a>
 
@@ -21,7 +21,7 @@
         <ul class="nav-list primary-nav">
             <!-- HOME -->
             <li class="nav-item">
-                <a href="index" class="nav-link">
+                <a href="./" class="nav-link">
                     <span class="nav-icon material-symbols-rounded">home</span>
                     <span class="nav-label">Home</span>
                 </a>
