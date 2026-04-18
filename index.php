@@ -147,7 +147,6 @@ include 'widget/sidebar.php';
                         <img src="https://cdn.simpleicons.org/php" height="60" alt="PHP">
                         <img src="https://cdn.simpleicons.org/python" height="60" alt="Python">
                         <img src="https://cdn.simpleicons.org/wordpress" height="60" alt="WordPress">
-                        <img src="https://cdn.simpleicons.org/moodle" height="60" alt="Moodle">
                         <img src="https://cdn.simpleicons.org/linux" height="60" alt="Linux">
 
                         <!-- COPIA DUPLICATA -->
@@ -166,7 +165,6 @@ include 'widget/sidebar.php';
                         <img src="https://cdn.simpleicons.org/php" height="60" alt="PHP">
                         <img src="https://cdn.simpleicons.org/python" height="60" alt="Python">
                         <img src="https://cdn.simpleicons.org/wordpress" height="60" alt="WordPress">
-                        <img src="https://cdn.simpleicons.org/moodle" height="60" alt="Moodle">
                         <img src="https://cdn.simpleicons.org/linux" height="60" alt="Linux">
                     </div>
                 </div>
