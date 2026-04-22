@@ -48,11 +48,19 @@
                 <span class="material-symbols-rounded">mail</span>
                 <span>info@craftaweb.it</span>
             </a>
-            <!-- GITHUB -->
+            <!-- SOCIAL MEDIA -->
             <div class="footer-socials">
-                <a href="https://github.com/alessiocarrara/CraftaWeb" target="_blank" class="footer-social-btn" aria-label="GitHub">
+                <!-- INSTAGRAM -->
+                <a href="https://www.instagram.com/craftaweb.dev" target="_blank" class="footer-social-btn"
+                    aria-label="Instagram">
+                    <img src="https://cdn.simpleicons.org/instagram" height="20" alt="Instagram">
+                </a>
+                <!-- GITHUB -->
+                <a href="https://github.com/alessiocarrara/CraftaWeb" target="_blank" class="footer-social-btn"
+                    aria-label="GitHub">
                     <img src="https://cdn.simpleicons.org/github" height="20" alt="GitHub">
                 </a>
+
             </div>
         </div>
     </div>
